@@ -13,4 +13,4 @@ tip=input("What percentage tip would you like to give? 10, 12, or 15?")
 split_by=int(input("How many people to split this bill to?"))
 amount = float(total)*(1+(int(tip)/100))
 amount_each =amount/split_by
-print(f"Each person should pay {round(amount_each,3)}")
+print(f"Each person should pay ${round(amount_each,2)}")
