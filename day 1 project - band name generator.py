@@ -1,3 +1,4 @@
+# to run the code got to https://replit.com/@nothuuu/band-name-generator-start#main.py
 #1. Create a greeting for your program.
 print("Welcome to the band name generator")
 
