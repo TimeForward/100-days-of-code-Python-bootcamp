@@ -1,3 +1,4 @@
+# run this code at  https://replit.com/@nothuuu/day-3-theory-rollercoaster-example
 #conditionals
 # == vs = , = vs !=
 import this
@@ -36,7 +37,11 @@ if height >= 120:
   elif age <= 18:
       bill=7
       print("Teen tickets are $7.")
-  else:
+  elif age>= 45 and age<=55:
+      bill=0
+      print("Everything is going to be ok! Have a free ride on us.")
+  
+  else :
       bill=12
       print("Adult tickets are $12.")
         
@@ -62,3 +67,4 @@ else:
     #     do this
 ##Theory ^ important - first make flowchart diagram with logic,
 #then it is easy to turn it into code 
+# AND OR NOT oeprators
