@@ -10,13 +10,20 @@ if height >= 120:
   print("You can ride the rollercoaster!")
   age=int(input("What is your age?"))
   if age < 12:
-      print("Please, pay $5.")
+      print("Child tickets are $5.")
   elif age <= 18:
-      print("Please, pay $7.")
+      print("Teen tickets are $7.")
   else:
-      print("Please, pay $12.")  
+      print("Adult tickets are $12.")  
+    photo=input('Do you want a photo?')
+    if photo == "Yes".lower:
+        print("Please, pay your ticket price plus $3 ")
+    else:
+        print(f"Please, pay your ticket price ")
+        
 else:
-  print("Sorry, you have to grow taller beore you can ride.")
+  print("Sorry, you have to grow taller before you can ride.")
+
     
     # *******************
     # nested if /else statements
@@ -27,4 +34,6 @@ else:
     #         do this
     # else:
     #     do this
+##Theory ^ important - first make flowchart diagram with logic,
+#then it is easy to turn it into code 
 
