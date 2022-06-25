@@ -54,9 +54,8 @@ elif user_choice==1:
 elif user_choice==2:
     user_choice_converted="Scissors"
     print(scissors)
-print(f"User chose {user_choice_converted}")
 
-
+#
 
 
 if user_choice==0 and computer_choice==1:
@@ -71,6 +70,8 @@ elif user_choice==2 and computer_choice==0:
     print("Computer wins")
 elif user_choice==2 and computer_choice==1:   
     print("User wins")
+elif user_choice>=3 or user_choice<0:
+    print(f"User chose an invalid number {user_choice}, user loses")
 else:
     print("It's a draw")
 
