@@ -74,6 +74,8 @@ def my_function():
 #The conditions front_is_clear() or wall_in_front(), at_goal(), and their negation.
 #How to use a while loop and an if statement.
 #hurdle 4 solution http://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%204&url=worlds%2Ftutorial_en%2Fhurdle4.json:
+
+#Maze fo reeborg
 def turn_right():
     turn_left()
     turn_left()
@@ -98,4 +100,25 @@ while not at_goal():
         move()
           
     
+    def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
     
+while not at_goal():
+    if right_is_clear():
+        turn_right()
+        while front_is_clear :
+            move()
+           
+    elif front_is_clear():
+        while front_is_clear :
+           move()
+    else:
+        turn_left()
+        while front_is_clear :
+            move()
+        
+        
+         
