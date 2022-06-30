@@ -1,3 +1,4 @@
+# day 7 exercise 2 :  hangman part 2:
 # day 7 hangman
 #part 1
 #Step 1 
