@@ -76,28 +76,28 @@ def my_function():
 #hurdle 4 solution http://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%204&url=worlds%2Ftutorial_en%2Fhurdle4.json:
 
 #Maze fo reeborg
-def turn_right():
-    turn_left()
-    turn_left()
-    turn_left()
-def jump():
-    turn_left()
-    while wall_on_right():
-        move()
+# def turn_right():
+#     turn_left()
+#     turn_left()
+#     turn_left()
+# def jump():
+#     turn_left()
+#     while wall_on_right():
+#         move()
     
-    turn_right()
-    move()
-    turn_right()    
+#     turn_right()
+#     move()
+#     turn_right()    
     
-    while front_is_clear():
-        move()
-    turn_left()
+#     while front_is_clear():
+#         move()
+#     turn_left()
     
-while not at_goal():
-    if wall_in_front():
-        jump()
-    else:
-        move()
+# while not at_goal():
+#     if wall_in_front():
+#         jump()
+#     else:
+#         move()
           
     
     def turn_right():
@@ -109,16 +109,12 @@ while not at_goal():
 while not at_goal():
     if right_is_clear():
         turn_right()
-        while front_is_clear :
-            move()
-           
+        move()       
     elif front_is_clear():
-        while front_is_clear :
-           move()
+            move()
     else:
         turn_left()
-        while front_is_clear :
-            move()
+        
         
         
          
