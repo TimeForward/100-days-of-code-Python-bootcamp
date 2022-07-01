@@ -2,6 +2,63 @@
 
 import random
 
+stages = ['''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+''']
+
 end_of_game = False
 word_list = ["ardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
@@ -24,6 +81,8 @@ while not end_of_game:
     #Check guessed letter
       
     for position in range(word_length):
+        print(display)
+        print(f"Lives left: {lives}")
         guess = input("Guess a letter: ").lower()
         letter = chosen_word[position]
         # print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
@@ -33,7 +92,12 @@ while not end_of_game:
     #TODO-2: - If guess is not a letter in the chosen_word,
     #Then reduce 'lives' by 1. 
     #If lives goes down to 0 then the game should stop and it should print "You lose."
-        elif letter != guess:
+          index=0
+        if guess in chosen_word:
+            index=chosen_word.find(guess)
+            display[index]=guess
+            print("Right")
+        elif guess not in chosen_word:
           lives=lives-1
           print(f"Wrong. Lives left: {lives}")
         if lives==0:
@@ -41,7 +105,7 @@ while not end_of_game:
           print("You lose")
           
     #Join all the elements in the list and turn it into a String.
-        print(display)
+        
 
         #Check if user has got all letters.
         if "_" not in display:
@@ -49,4 +113,4 @@ while not end_of_game:
             print("You win.")
 
     #TODO-3: - print the ASCII art from 'stages' that corresponds to the current number of 'lives' the user has remaining.
-    #print(stages[lives])
+        print(stages[lives])
