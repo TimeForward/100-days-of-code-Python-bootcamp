@@ -1,6 +1,4 @@
 # day 8 exercise 2 Ceasars cypher my version
-
-
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
@@ -22,7 +20,7 @@ def encrypt(text, shift):
 
     ##🐛Bug alert: What happens if you try to encode the word 'civilization'?🐛
 
-  encrypted_text=[]
+  encrypted_text=""
   alphabet_index=0
   shifted_index=0
   
@@ -37,10 +35,9 @@ def encrypt(text, shift):
     # getting letters with shifted index 
     encrypted_text+=alphabet[shifted_index]
     #list to string conversion
-    encrypted_text_to_string = ''.join(encrypted_text)
-  print(encrypted_text_to_string)
+    
+  print(f"The encoded text is: {encrypted_text}")
 #TODO-3: Call the encrypt function and pass in the user inputs. You should be able to test the code and encrypt a message. 
 # if "encode" was chosen: call "encrypt" function
 if direction=="encode":
-    encrypt(text, shift)    
-
+    encrypt(text, shift)
